@@ -50,4 +50,4 @@ Refer JavaDoc or official ipqualityscore's API Documentation.
 
 ### TODO
 
- -[ ] Postback request of Email Verification API
+ - [ ] Postback request of Email Verification API

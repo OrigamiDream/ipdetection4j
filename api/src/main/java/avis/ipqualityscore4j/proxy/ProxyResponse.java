@@ -25,7 +25,7 @@ public interface ProxyResponse extends Response {
 
     /**
      *
-     * ISP if one if known. Otherwise "N/A".
+     * ISP if one is known. Otherwise "N/A".
      *
      * @apiNote Fetched from https://www.ipqualityscore.com/user/proxy-detection-api/documentation
      * @return {@link String}

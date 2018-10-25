@@ -1,6 +1,6 @@
 # IpQualityScore4j
 
-API implementation of [ipqualityscore.com](https://ipqualityscore4j.com) in Java.
+API implementation of [ipqualityscore.com](https://ipqualityscore.com/) in Java.
 
 ### Compile
 for OS X/Linux:

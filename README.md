@@ -2,17 +2,6 @@
 
 API implementation of [ipqualityscore.com](https://ipqualityscore.com/) in Java.
 
-### Compile
-for OS X/Linux:
-```
-./mvnw clean install
-```
-
-for Windows:
-```
-mvnw.cmd clean install
-```
-
 ### Example
 A simple example implementation can be found [here](https://github.com/OrigamiDream/ipqualityscore4j/blob/master/example/src/main/java/avis/ipqualityscore4j/examples/IpQualityScore4jTest.java).
 ```java
@@ -46,6 +35,49 @@ ipQualityScore4j.email()
 [EmailRequestBuilder](https://github.com/OrigamiDream/ipqualityscore4j/blob/master/builder/src/main/java/avis/ipqualityscore4j/builders/email/EmailRequestBuilder.java) and [ProxyRequestBuilder](https://github.com/OrigamiDream/ipqualityscore4j/blob/master/builder/src/main/java/avis/ipqualityscore4j/builders/proxy/ProxyRequestBuilder.java) supports many API parameters
 
 Refer JavaDoc or official ipqualityscore's API Documentation.
+
+### Gradle/Maven
+##### Maven
+```xml
+<repositories>
+    <repository>
+        <id>jitpack.io</id>
+        <url>https://jitpack.io</url>
+    </repository>
+</repositories>
+<dependencies>
+	<dependency>
+	    <groupId>com.github.OrigamiDream</groupId>
+	    <artifactId>ipqualityscore4j</artifactId>
+	    <version>v1.0-SNAPSHOT</version>
+	</dependency>
+</dependencies>
+```
+##### Gradle
+```gradle
+allprojects {
+    repositories {
+        ...
+        maven { url 'https://jitpack.io' }
+    }
+}
+
+dependencies {
+    implementation 'com.github.OrigamiDream:ipqualityscore4j:v1.0-SNAPSHOT'
+}
+```
+
+
+### Compile
+for OS X/Linux:
+```
+./mvnw clean install
+```
+
+for Windows:
+```
+mvnw.cmd clean install
+```
 
 
 ### TODO

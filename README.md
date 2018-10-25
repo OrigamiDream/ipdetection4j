@@ -46,11 +46,11 @@ Refer JavaDoc or official ipqualityscore's API Documentation.
     </repository>
 </repositories>
 <dependencies>
-	<dependency>
-	    <groupId>com.github.OrigamiDream</groupId>
-	    <artifactId>ipqualityscore4j</artifactId>
-	    <version>v1.0-SNAPSHOT</version>
-	</dependency>
+    <dependency>
+        <groupId>com.github.OrigamiDream</groupId>
+        <artifactId>ipqualityscore4j</artifactId>
+        <version>v1.0-SNAPSHOT</version>
+    </dependency>
 </dependencies>
 ```
 ##### Gradle

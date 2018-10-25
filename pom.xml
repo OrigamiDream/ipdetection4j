@@ -7,11 +7,7 @@
     <groupId>avis.ipqualityscore4j</groupId>
     <artifactId>ipqualityscore4j</artifactId>
     <packaging>pom</packaging>
-    <version>${project.version}</version>
-
-    <properties>
-        <project.version>1.0-SNAPSHOT</project.version>
-    </properties>
+    <version>1.0-SNAPSHOT</version>
 
     <build>
         <plugins>
@@ -23,12 +19,35 @@
                     <target>8</target>
                 </configuration>
             </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-shade-plugin</artifactId>
+                <version>3.0.0</version>
+                <configuration>
+                    <artifactSet>
+                        <excludes>
+                            <exclude>avis.ipqualityscore4j:example</exclude>
+                        </excludes>
+                    </artifactSet>
+                </configuration>
+                <executions>
+                    <execution>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>shade</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
         </plugins>
     </build>
     <modules>
         <module>api</module>
         <module>builder</module>
         <module>internal</module>
+        <module>common</module>
+        <module>front</module>
+        <module>example</module>
     </modules>
 
     <dependencies>

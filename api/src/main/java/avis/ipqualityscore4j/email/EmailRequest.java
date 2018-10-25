@@ -1,5 +1,7 @@
 package avis.ipqualityscore4j.email;
 
+import avis.ipqualityscore4j.annotations.Parameter;
+import avis.ipqualityscore4j.annotations.RESTful;
 import avis.ipqualityscore4j.components.Request;
 
 public interface EmailRequest extends Request {
@@ -8,7 +10,7 @@ public interface EmailRequest extends Request {
     // == RESTful API ==
     // =================
 
-    String email();
+    @RESTful String email();
 
     // =================
     // === Parameter ===
@@ -28,7 +30,7 @@ public interface EmailRequest extends Request {
      * @apiNote Fetched from https://www.ipqualityscore.com/user/email-verification-api/documentation
      * @return {@link Boolean}
      */
-    boolean fast();
+    @Parameter boolean fast();
 
     /**
      *
@@ -44,6 +46,6 @@ public interface EmailRequest extends Request {
      * @apiNote Fetched from https://www.ipqualityscore.com/user/email-verification-api/documentation
      * @return {@link Integer}
      */
-    int timeout();
+    @Parameter int timeout();
 
 }

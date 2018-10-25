@@ -9,13 +9,5 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>api</artifactId>
-
-    <dependencies>
-        <dependency>
-            <groupId>avis.ipqualityscore4j</groupId>
-            <artifactId>common</artifactId>
-            <version>${project.version}</version>
-        </dependency>
-    </dependencies>
+    <artifactId>common</artifactId>
 </project>

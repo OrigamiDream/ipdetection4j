@@ -1,5 +1,7 @@
 package avis.ipqualityscore4j.proxy;
 
+import avis.ipqualityscore4j.annotations.Parameter;
+import avis.ipqualityscore4j.annotations.RESTful;
 import avis.ipqualityscore4j.components.Request;
 
 public interface ProxyRequest extends Request {
@@ -8,7 +10,7 @@ public interface ProxyRequest extends Request {
     // == RESTful API ==
     // =================
 
-    String ipAddress();
+    @RESTful String ipAddress();
 
     // =================
     // === Parameter ===
@@ -25,7 +27,7 @@ public interface ProxyRequest extends Request {
      * @apiNote Fetched from https://www.ipqualityscore.com/user/proxy-detection-api/documentation
      * @return {@link Integer}
      */
-    int strictness();
+    @Parameter int strictness();
 
     /**
      *
@@ -39,7 +41,7 @@ public interface ProxyRequest extends Request {
      * @apiNote Fetched from https://www.ipqualityscore.com/user/proxy-detection-api/documentation
      * @return {@link String}
      */
-    String userAgent();
+    @Parameter String userAgent();
 
     /**
      *
@@ -49,7 +51,7 @@ public interface ProxyRequest extends Request {
      * @apiNote Fetched from https://www.ipqualityscore.com/user/proxy-detection-api/documentation
      * @return {@link String}
      */
-    String userLanguage();
+    @Parameter String userLanguage();
 
     /**
      *
@@ -64,7 +66,7 @@ public interface ProxyRequest extends Request {
      * @apiNote Fetched from https://www.ipqualityscore.com/user/proxy-detection-api/documentation
      * @return {@link Boolean}
      */
-    boolean fast();
+    @Parameter boolean fast();
 
     /**
      *
@@ -81,7 +83,7 @@ public interface ProxyRequest extends Request {
      * @apiNote Fetched from https://www.ipqualityscore.com/user/proxy-detection-api/documentation
      * @return {@link Boolean}
      */
-    boolean mobile();
+    @Parameter boolean mobile();
 
     /**
      *
@@ -92,7 +94,7 @@ public interface ProxyRequest extends Request {
      * @apiNote Fetched from https://www.ipqualityscore.com/user/proxy-detection-api/documentation
      * @return {@link Boolean}
      */
-    boolean allowPublicAccessPoints();
+    @Parameter boolean allowPublicAccessPoints();
 
     /**
      * Adjusts the weights for penalties applied due to irregularities and fraudulent patterns
@@ -103,6 +105,6 @@ public interface ProxyRequest extends Request {
      * @apiNote Fetched from https://www.ipqualityscore.com/user/proxy-detection-api/documentation
      * @return {@link Integer}
      */
-    int transactionStrictness();
+    @Parameter int transactionStrictness();
 
 }

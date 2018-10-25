@@ -1,8 +1,7 @@
 package avis.ipqualityscore4j.email;
 
+import avis.ipqualityscore4j.annotations.MethodParser;
 import avis.ipqualityscore4j.components.Response;
-
-import java.util.List;
 
 public interface EmailResponse extends Response {
 
@@ -45,7 +44,7 @@ public interface EmailResponse extends Response {
      * @apiNote Fetched from https://www.ipqualityscore.com/user/email-verification-api/documentation
      * @return {@link Deliverability}
      */
-    Deliverability deliverability();
+    @MethodParser(DeliverabilityParser.class) Deliverability deliverability();
 
     /**
      *
@@ -58,7 +57,7 @@ public interface EmailResponse extends Response {
      * @apiNote Fetched from https://www.ipqualityscore.com/user/email-verification-api/documentation
      * @return {@link String}
      */
-    String suspect();
+    boolean suspect();
 
     /**
      *
@@ -77,7 +76,7 @@ public interface EmailResponse extends Response {
      * @apiNote Fetched from https://www.ipqualityscore.com/user/email-verification-api/documentation
      * @return {@link SmtpScore}
      */
-    SmtpScore smtpScore();
+    @MethodParser(SmtpScoreParser.class) SmtpScore smtpScore();
 
     /**
      *
@@ -96,7 +95,7 @@ public interface EmailResponse extends Response {
      * @apiNote Fetched from https://www.ipqualityscore.com/user/email-verification-api/documentation
      * @return {@link OverallScore}
      */
-    OverallScore overallScore();
+    @MethodParser(OverallScoreParser.class) OverallScore overallScore();
 
     /**
      *

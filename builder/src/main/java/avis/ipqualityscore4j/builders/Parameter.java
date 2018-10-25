@@ -1,11 +1,10 @@
 package avis.ipqualityscore4j.builders;
 
-import java.util.HashMap;
-import java.util.Map;
+import java.util.LinkedHashMap;
 
 public class Parameter {
 
-    private final Map<String, Object> parameters = new HashMap<>();
+    private final LinkedHashMap<String, Object> parameters = new LinkedHashMap<>();
 
     public void put(String key, Object value) {
         parameters.put(key, value);
@@ -19,4 +18,7 @@ public class Parameter {
         return get(key);
     }
 
+    LinkedHashMap<String, Object> getParameters() {
+        return parameters;
+    }
 }

@@ -44,7 +44,10 @@ public interface ReturnTypeParser<T> {
             if(redirectTo != null && redirectTo != parser.getClass()) {
                 continue;
             }
-            redirectTo = null;
+            if(redirectTo != null) {
+                delegate.redirectTo = null;
+                redirectTo = null;
+            }
             for(Class type : parser.toTypes()) {
                 if(returnType == type) {
                     start = true;

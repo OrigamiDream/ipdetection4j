@@ -28,12 +28,4 @@ public class IntegerParser implements ReturnTypeParser<Integer> {
         }
         return delegate;
     }
-
-    public static void main(String args[]) {
-        IntegerParser parser = new IntegerParser();
-        ParsingResult result = parser.parse(Integer.class, new ParsingResult(), "1.262");
-
-        System.out.println("error: " + result.error);
-        System.out.println("value: " + result.value);
-    }
 }

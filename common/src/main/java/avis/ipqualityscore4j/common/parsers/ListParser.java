@@ -4,7 +4,6 @@ import avis.ipqualityscore4j.annotations.Generic;
 import org.json.JSONArray;
 
 import java.lang.reflect.Method;
-import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
@@ -49,13 +48,5 @@ public class ListParser implements ReturnTypeParser<List> {
             }
         }
         return delegate;
-    }
-
-    private static List<String> a() {
-        return new ArrayList<>();
-    }
-
-    public static void main(String args[]) throws NoSuchMethodException {
-        System.out.println(ListParser.class.getDeclaredMethod("a").getReturnType() == List.class);
     }
 }

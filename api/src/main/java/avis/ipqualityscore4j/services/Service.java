@@ -17,9 +17,12 @@ public interface Service<R extends Response, Q extends Request> extends ProxyHel
         return proxy(new Class[] { responseType, Response.class }, data, function);
     }
 
-    default void newThread(Runnable runnable) {
-        Thread thread = new Thread(runnable);
-        thread.start();
+    default void newOptionalThread(boolean sync, Runnable runnable) {
+        if(sync) {
+            runnable.run();
+        } else {
+            Thread thread = new Thread(runnable);
+            thread.start();
+        }
     }
-
 }

@@ -21,7 +21,7 @@ public class InternalProxyDetection extends InternalService implements ProxyDete
     @Override
     public CompletableFuture<ProxyResponse> execute(ProxyRequest proxyRequest) {
         CompletableFuture<ProxyResponse> future = new CompletableFuture<>();
-        newThread(() -> {
+        newOptionalThread(proxyRequest.sync(), () -> {
             String parameters;
             if(proxyRequest instanceof IParameter) {
                 parameters = buildByParameter(proxyRequest);

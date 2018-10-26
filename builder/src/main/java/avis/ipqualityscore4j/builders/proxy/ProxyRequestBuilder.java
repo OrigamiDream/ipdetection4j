@@ -7,6 +7,8 @@ import avis.ipqualityscore4j.proxy.ProxyRequest;
 public class ProxyRequestBuilder implements ProxyRequest, IParameter {
 
     private String ipAddress;
+    private boolean sync;
+    
     private final Parameter parameter = new Parameter();
 
     public ProxyRequestBuilder ipAddress(String ipAddress) {
@@ -92,5 +94,15 @@ public class ProxyRequestBuilder implements ProxyRequest, IParameter {
     @Override
     public Parameter getParameter() {
         return parameter;
+    }
+    
+    public ProxyRequestBuilder sync(boolean sync) {
+        this.sync = sync;
+        return this;
+    }
+    
+    @Override
+    public boolean sync() {
+        return sync;
     }
 }

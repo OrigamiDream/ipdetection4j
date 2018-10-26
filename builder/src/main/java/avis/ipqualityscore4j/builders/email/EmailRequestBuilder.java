@@ -7,6 +7,7 @@ import avis.ipqualityscore4j.email.EmailRequest;
 public class EmailRequestBuilder implements EmailRequest, IParameter {
 
     private String email;
+    private boolean sync;
 
     private final Parameter parameter = new Parameter();
 
@@ -43,5 +44,15 @@ public class EmailRequestBuilder implements EmailRequest, IParameter {
     @Override
     public Parameter getParameter() {
         return parameter;
+    }
+    
+    public EmailRequestBuilder sync(boolean sync) {
+        this.sync = sync;
+        return this;
+    }
+    
+    @Override
+    public boolean sync() {
+        return sync;
     }
 }

@@ -21,7 +21,7 @@ public class InternalEmailVerification extends InternalService implements EmailV
     @Override
     public CompletableFuture<EmailResponse> execute(EmailRequest emailRequest) {
         CompletableFuture<EmailResponse> future = new CompletableFuture<>();
-        newThread(() -> {
+        newOptionalThread(emailRequest.sync(), () -> {
             String parameters;
             if(emailRequest instanceof IParameter) {
                 parameters = buildByParameter(emailRequest);

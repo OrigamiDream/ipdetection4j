@@ -11,4 +11,6 @@ public @interface MethodParser {
 
     Class<? extends Parser> value();
 
+    Class<?> returnType();
+
 }

@@ -2,9 +2,9 @@ package avis.ipqualityscore4j.email;
 
 import avis.ipqualityscore4j.annotations.Parser;
 
-public class SmtpScoreParser implements Parser<String, SmtpScore> {
+public class SmtpScoreParser implements Parser<Integer, SmtpScore> {
     @Override
-    public SmtpScore parse(String integer) {
-        return SmtpScore.getByScore(Integer.parseInt(integer));
+    public SmtpScore parse(Integer integer) {
+        return SmtpScore.getByScore(integer);
     }
 }

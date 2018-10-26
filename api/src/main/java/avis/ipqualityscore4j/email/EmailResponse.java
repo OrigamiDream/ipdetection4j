@@ -44,7 +44,7 @@ public interface EmailResponse extends Response {
      * @apiNote Fetched from https://www.ipqualityscore.com/user/email-verification-api/documentation
      * @return {@link Deliverability}
      */
-    @MethodParser(DeliverabilityParser.class) Deliverability deliverability();
+    @MethodParser(value = DeliverabilityParser.class, returnType = String.class) Deliverability deliverability();
 
     /**
      *
@@ -76,7 +76,7 @@ public interface EmailResponse extends Response {
      * @apiNote Fetched from https://www.ipqualityscore.com/user/email-verification-api/documentation
      * @return {@link SmtpScore}
      */
-    @MethodParser(SmtpScoreParser.class) SmtpScore smtpScore();
+    @MethodParser(value = SmtpScoreParser.class, returnType = Integer.class) SmtpScore smtpScore();
 
     /**
      *
@@ -95,7 +95,7 @@ public interface EmailResponse extends Response {
      * @apiNote Fetched from https://www.ipqualityscore.com/user/email-verification-api/documentation
      * @return {@link OverallScore}
      */
-    @MethodParser(OverallScoreParser.class) OverallScore overallScore();
+    @MethodParser(value = OverallScoreParser.class, returnType = Integer.class) OverallScore overallScore();
 
     /**
      *

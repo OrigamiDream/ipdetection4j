@@ -99,11 +99,11 @@ public interface ProxyResponse extends Response {
      * @apiNote Fetched from https://www.ipqualityscore.com/user/proxy-detection-api/documentation
      * @return {@link String}
      */
-    int latitude();
+    String latitude();
 
     /**
      *
-     * "Longitude of IP address if available or "N/A" if unknown.
+     * Longitude of IP address if available or "N/A" if unknown.
      *
      * @apiNote Fetched from https://www.ipqualityscore.com/user/proxy-detection-api/documentation
      * @return {@link String}

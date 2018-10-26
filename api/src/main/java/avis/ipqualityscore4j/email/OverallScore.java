@@ -2,6 +2,7 @@ package avis.ipqualityscore4j.email;
 
 public enum OverallScore {
 
+    INVALID_EMAIL(-1),
     INVALID_EMAIL_ADDRESS(0),
     UNREACHABLE_MAIL_SERVER(1),
     TEMPORARY_REJECTION(2),

@@ -1,5 +1,7 @@
 package avis.ipqualityscore4j.components;
 
+import avis.ipqualityscore4j.annotations.Generic;
+
 import java.util.List;
 
 public interface Response {
@@ -19,7 +21,7 @@ public interface Response {
      *
      * @return {@link List<String>}
      */
-    List<String> errors();
+    @Generic(String.class) List<String> errors();
 
     /**
      *

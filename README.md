@@ -49,7 +49,7 @@ Refer JavaDoc or official ipqualityscore's API Documentation.
     <dependency>
         <groupId>com.github.OrigamiDream</groupId>
         <artifactId>ipqualityscore4j</artifactId>
-        <version>v1.0-SNAPSHOT</version>
+        <version>v1.1-SNAPSHOT</version>
     </dependency>
 </dependencies>
 ```
@@ -63,7 +63,7 @@ allprojects {
 }
 
 dependencies {
-    implementation 'com.github.OrigamiDream:ipqualityscore4j:v1.0-SNAPSHOT'
+    implementation 'com.github.OrigamiDream:ipqualityscore4j:v1.1-SNAPSHOT'
 }
 ```
 

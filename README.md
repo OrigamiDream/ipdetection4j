@@ -30,7 +30,7 @@ ipQualityScore4j.email()
     System.out.println("Is common: " + emailResponse.common());
 });
 ```
-
+You can see detailed usage of the API [here](https://github.com/OrigamiDream/ipqualityscore4j/blob/master/example/src/main/java/avis/ipqualityscore4j/examples/IpQualityScore4jTest.java).
 
 [EmailRequestBuilder](https://github.com/OrigamiDream/ipqualityscore4j/blob/master/builder/src/main/java/avis/ipqualityscore4j/builders/email/EmailRequestBuilder.java) and [ProxyRequestBuilder](https://github.com/OrigamiDream/ipqualityscore4j/blob/master/builder/src/main/java/avis/ipqualityscore4j/builders/proxy/ProxyRequestBuilder.java) supports many API parameters
 

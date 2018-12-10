@@ -5,7 +5,7 @@
     <parent>
         <artifactId>ipdetection4j</artifactId>
         <groupId>avis.ipdetection4j</groupId>
-        <version>1.1-SNAPSHOT</version>
+        <version>2.3-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 

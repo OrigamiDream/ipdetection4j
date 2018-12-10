@@ -13,7 +13,7 @@
     <dependency>
         <groupId>com.github.OrigamiDream.ipdetection4j</groupId>
         <artifactId>bootstrap</artifactId>
-        <version>v2.3-SNAPSHOT</version>
+        <version>v2.4-SNAPSHOT</version>
     </dependency>
 </dependencies>
 ```
@@ -27,7 +27,7 @@ allprojects {
 }
 
 dependencies {
-    implementation 'com.github.OrigamiDream.ipdetection4j:bootstrap:v2.3-SNAPSHOT'
+    implementation 'com.github.OrigamiDream.ipdetection4j:bootstrap:v2.4-SNAPSHOT'
 }
 ```
 

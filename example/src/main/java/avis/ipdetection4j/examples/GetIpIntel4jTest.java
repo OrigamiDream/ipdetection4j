@@ -9,7 +9,7 @@ public class GetIpIntel4jTest {
     public static void main(String args[]) {
         GetIpIntel4j getIpIntel4j = new GetIpIntel4j();
         getIpIntel4j.proxy()
-                .execute(new ProxyRequestBuilder().ip("39.120.159.179").contact("sdy36071@naver.com").flags(Flags.B))
+                .execute(new ProxyRequestBuilder().ip("127.0.0.1").contact("your@email.com").flags(Flags.B))
                 .whenComplete((proxyResponse, throwable) -> {
             System.out.println("Contact: " + proxyResponse.contact());
             System.out.println("Result: " + proxyResponse.result());

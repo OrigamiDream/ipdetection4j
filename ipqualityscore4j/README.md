@@ -32,7 +32,7 @@ ipQualityScore4j.email()
 ```
 You can see detailed usage of the API [here](https://github.com/OrigamiDream/ipdetection4j/blob/master/example/src/main/java/avis/ipdetection4j/examples/IpQualityScore4jTest.java).
 
-[EmailRequestBuilder](https://github.com/OrigamiDream/ipdetection4j/blob/master/ipqualityscore4j/ipqualityscore4j-builder/src/main/java/avis/ipqualityscore4j/builders/email/EmailRequestBuilder.java) and [ProxyRequestBuilder](https://github.com/OrigamiDream/ipdetection4j/blob/master/ipqualityscore4j/ipqualityscore4j-builder/src/main/java/avis/ipqualityscore4j/builders/proxy/ProxyRequestBuilder.java) supports many API parameters
+[EmailRequestBuilder](https://github.com/OrigamiDream/ipdetection4j/blob/master/ipqualityscore4j/ipqualityscore4j-builder/src/main/java/avis/ipdetection4j/ipqualityscore4j/builders/email/EmailRequestBuilder.java) and [ProxyRequestBuilder](https://github.com/OrigamiDream/ipdetection4j/blob/master/ipqualityscore4j/ipqualityscore4j-builder/src/main/java/avis/ipdetection4j/ipqualityscore4j/builders/proxy/ProxyRequestBuilder.java) supports many API parameters
 
 Refer JavaDoc or official ipqualityscore's API Documentation.
 

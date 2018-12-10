@@ -19,26 +19,6 @@
                     <target>8</target>
                 </configuration>
             </plugin>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-shade-plugin</artifactId>
-                <version>3.0.0</version>
-                <configuration>
-                    <artifactSet>
-                        <excludes>
-                            <exclude>avis.ipdetection4j:example</exclude>
-                        </excludes>
-                    </artifactSet>
-                </configuration>
-                <executions>
-                    <execution>
-                        <phase>package</phase>
-                        <goals>
-                            <goal>shade</goal>
-                        </goals>
-                    </execution>
-                </executions>
-            </plugin>
         </plugins>
     </build>
 
@@ -49,6 +29,7 @@
         <module>example</module>
         <module>annotations</module>
         <module>ipqualityscore4j</module>
+        <module>bootstrap</module>
     </modules>
 
     <dependencies>

@@ -18,7 +18,14 @@ public interface MethodBuilder extends ILambdaHelper, LowcaseBuilder {
                     if(value == null || (value instanceof String && ((String) value).length() == 0)) {
                         return "";
                     }
-                    return makeLowcase(method.getName()) + "=" + value;
+                    Parameter parameter = method.getAnnotation(Parameter.class);
+                    String key;
+                    if(!parameter.value().isEmpty()) {
+                        key = parameter.value();
+                    } else {
+                        key = makeLowcase(method.getName());
+                    }
+                    return key + "=" + value;
                 }))
                 .filter(value -> value.length() > 0)
                 .collect(Collectors.joining("&"));

@@ -9,7 +9,14 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>getipintel</artifactId>
+    <artifactId>getipintel4j</artifactId>
+    <packaging>pom</packaging>
+    <modules>
+        <module>getipintel4j-api</module>
+        <module>getipintel4j-builder</module>
+        <module>getipintel4j-internal</module>
+        <module>getipintel4j-front</module>
+    </modules>
 
     <dependencies>
         <dependency>
@@ -33,4 +40,5 @@
             <version>${project.version}</version>
         </dependency>
     </dependencies>
+
 </project>

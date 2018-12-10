@@ -18,6 +18,11 @@
             <artifactId>ipqualityscore4j-front</artifactId>
             <version>${project.version}</version>
         </dependency>
+        <dependency>
+            <groupId>avis.ipdetection4j.getipintel4j</groupId>
+            <artifactId>getipintel4j-front</artifactId>
+            <version>${project.version}</version>
+        </dependency>
         <!-- https://mvnrepository.com/artifact/com.google.code.gson/gson -->
         <dependency>
             <groupId>com.google.code.gson</groupId>

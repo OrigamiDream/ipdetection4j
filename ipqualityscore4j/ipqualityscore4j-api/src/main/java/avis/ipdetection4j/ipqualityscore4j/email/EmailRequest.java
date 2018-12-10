@@ -2,9 +2,9 @@ package avis.ipdetection4j.ipqualityscore4j.email;
 
 import avis.ipdetection4j.annotations.Parameter;
 import avis.ipdetection4j.annotations.RESTful;
-import avis.ipdetection4j.ipqualityscore4j.components.IpQualityScoreRequest;
+import avis.ipdetection4j.common.Request;
 
-public interface EmailRequest extends IpQualityScoreRequest {
+public interface EmailRequest extends Request {
 
     // =================
     // == RESTful API ==

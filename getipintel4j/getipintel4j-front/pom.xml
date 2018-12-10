@@ -3,21 +3,20 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
-        <artifactId>ipqualityscore4j</artifactId>
+        <artifactId>getipintel4j</artifactId>
         <groupId>avis.ipdetection4j</groupId>
         <version>1.1-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>avis.ipdetection4j.ipqualityscore4j</groupId>
-    <artifactId>ipqualityscore4j-internal</artifactId>
+    <groupId>avis.ipdetection4j.getipintel4j</groupId>
+    <artifactId>getipintel4j-front</artifactId>
 
     <dependencies>
         <dependency>
-            <groupId>avis.ipdetection4j.ipqualityscore4j</groupId>
-            <artifactId>ipqualityscore4j-builder</artifactId>
+            <groupId>avis.ipdetection4j.getipintel4j</groupId>
+            <artifactId>getipintel4j-internal</artifactId>
             <version>${project.version}</version>
         </dependency>
     </dependencies>
-
 </project>

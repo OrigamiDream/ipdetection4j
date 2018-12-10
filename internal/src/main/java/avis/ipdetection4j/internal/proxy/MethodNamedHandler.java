@@ -1,5 +1,6 @@
 package avis.ipdetection4j.internal.proxy;
 
+import avis.ipdetection4j.annotations.Fixed;
 import avis.ipdetection4j.annotations.MethodParser;
 import avis.ipdetection4j.annotations.Parser;
 import avis.ipdetection4j.annotations.Uppercase;
@@ -27,11 +28,21 @@ public class MethodNamedHandler implements InvocationHandler, LowcaseBuilder {
         Object value = null;
         try {
             Uppercase uppercase = method.getAnnotation(Uppercase.class);
+            Fixed fixed = method.getAnnotation(Fixed.class);
+            if(uppercase != null && fixed != null) {
+                throw new IllegalArgumentException("@Uppercase and @Fixed both cannot be defined in one method.");
+            }
             MethodParser methodParser = method.getAnnotation(MethodParser.class);
 
             String key = fromCache(method.getName());
             if(uppercase != null) {
                 key = key.toUpperCase();
+            } else if(fixed != null) {
+                if(fixed.value().isEmpty()) {
+                    key = method.getName();
+                } else {
+                    key = fixed.value();
+                }
             }
             Class<?> returnType = method.getReturnType();
             value = parseReturnType(returnType, method, key, data);

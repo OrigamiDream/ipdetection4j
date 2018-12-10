@@ -27,7 +27,7 @@ allprojects {
 }
 
 dependencies {
-    implementation 'com.github.OrigamiDream:ipdetection4j:v1.1-SNAPSHOT'
+    implementation 'com.github.OrigamiDream:ipdetection4j:v2.0-SNAPSHOT'
 }
 ```
 

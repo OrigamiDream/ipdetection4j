@@ -2,9 +2,9 @@ package avis.ipdetection4j.ipqualityscore4j.proxy;
 
 import avis.ipdetection4j.annotations.Parameter;
 import avis.ipdetection4j.annotations.RESTful;
-import avis.ipdetection4j.ipqualityscore4j.components.Request;
+import avis.ipdetection4j.ipqualityscore4j.components.IpQualityScoreRequest;
 
-public interface ProxyRequest extends Request {
+public interface ProxyRequest extends IpQualityScoreRequest {
 
     // =================
     // == RESTful API ==

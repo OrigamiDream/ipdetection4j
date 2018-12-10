@@ -1,8 +1,5 @@
-package avis.ipdetection4j.ipqualityscore4j.services;
+package avis.ipdetection4j.common;
 
-import avis.ipdetection4j.common.ProxyHelper;
-import avis.ipdetection4j.ipqualityscore4j.components.Request;
-import avis.ipdetection4j.ipqualityscore4j.components.Response;
 import org.json.JSONObject;
 
 import java.lang.reflect.InvocationHandler;

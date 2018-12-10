@@ -2,9 +2,9 @@ package avis.ipdetection4j.ipqualityscore4j.email;
 
 import avis.ipdetection4j.annotations.MethodParser;
 
-import avis.ipdetection4j.ipqualityscore4j.components.Response;
+import avis.ipdetection4j.ipqualityscore4j.components.IpQualityScoreResponse;
 
-public interface EmailResponse extends Response {
+public interface EmailResponse extends IpQualityScoreResponse {
 
     /**
      * Does this email address appear valid?

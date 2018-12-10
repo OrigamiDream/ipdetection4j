@@ -1,10 +1,11 @@
 package avis.ipdetection4j.ipqualityscore4j.components;
 
 import avis.ipdetection4j.annotations.Generic;
+import avis.ipdetection4j.common.Response;
 
 import java.util.List;
 
-public interface Response {
+public interface IpQualityScoreResponse extends Response {
 
     /**
      *

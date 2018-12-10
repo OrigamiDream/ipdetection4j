@@ -30,6 +30,7 @@
         <module>annotations</module>
         <module>ipqualityscore4j</module>
         <module>bootstrap</module>
+        <module>getipintel</module>
     </modules>
 
     <dependencies>

@@ -1,9 +1,9 @@
 package avis.ipdetection4j.ipqualityscore4j.proxy;
 
 import avis.ipdetection4j.annotations.Uppercase;
-import avis.ipdetection4j.ipqualityscore4j.components.Response;
+import avis.ipdetection4j.ipqualityscore4j.components.IpQualityScoreResponse;
 
-public interface ProxyResponse extends Response {
+public interface ProxyResponse extends IpQualityScoreResponse {
 
     /**
      *

@@ -4,8 +4,8 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>avis.ipqualityscore4j</groupId>
-    <artifactId>ipqualityscore4j</artifactId>
+    <groupId>avis.ipdetection4j</groupId>
+    <artifactId>ipdetection4j</artifactId>
     <packaging>pom</packaging>
     <version>1.1-SNAPSHOT</version>
 
@@ -26,7 +26,7 @@
                 <configuration>
                     <artifactSet>
                         <excludes>
-                            <exclude>avis.ipqualityscore4j:example</exclude>
+                            <exclude>avis.ipdetection4j:example</exclude>
                         </excludes>
                     </artifactSet>
                 </configuration>
@@ -41,14 +41,14 @@
             </plugin>
         </plugins>
     </build>
+
     <modules>
-        <module>api</module>
         <module>builder</module>
         <module>internal</module>
         <module>common</module>
-        <module>front</module>
         <module>example</module>
         <module>annotations</module>
+        <module>ipqualityscore4j</module>
     </modules>
 
     <dependencies>

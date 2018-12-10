@@ -3,8 +3,8 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
-        <artifactId>ipqualityscore4j</artifactId>
-        <groupId>avis.ipqualityscore4j</groupId>
+        <artifactId>ipdetection4j</artifactId>
+        <groupId>avis.ipdetection4j</groupId>
         <version>1.1-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
@@ -13,8 +13,8 @@
 
     <dependencies>
         <dependency>
-            <groupId>avis.ipqualityscore4j</groupId>
-            <artifactId>api</artifactId>
+            <groupId>avis.ipdetection4j</groupId>
+            <artifactId>common</artifactId>
             <version>${project.version}</version>
         </dependency>
     </dependencies>

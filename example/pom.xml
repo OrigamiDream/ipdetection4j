@@ -13,9 +13,9 @@
 
     <dependencies>
         <dependency>
-            <groupId>avis.ipqualityscore4j</groupId>
-            <artifactId>front</artifactId>
-            <version>1.1-SNAPSHOT</version>
+            <groupId>avis.ipdetection4j.ipqualityscore4j</groupId>
+            <artifactId>ipqualityscore4j-front</artifactId>
+            <version>${project.version}</version>
         </dependency>
         <!-- https://mvnrepository.com/artifact/com.google.code.gson/gson -->
         <dependency>

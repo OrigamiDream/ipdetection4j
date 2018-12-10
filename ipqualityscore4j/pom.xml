@@ -9,12 +9,19 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>internal</artifactId>
+    <artifactId>ipqualityscore4j</artifactId>
+    <packaging>pom</packaging>
+    <modules>
+        <module>ipqualityscore4j-api</module>
+        <module>ipqualityscore4j-builder</module>
+        <module>ipqualityscore4j-internal</module>
+        <module>ipqualityscore4j-front</module>
+    </modules>
 
     <dependencies>
         <dependency>
             <groupId>avis.ipdetection4j</groupId>
-            <artifactId>common</artifactId>
+            <artifactId>annotations</artifactId>
             <version>${project.version}</version>
         </dependency>
         <dependency>
@@ -22,6 +29,15 @@
             <artifactId>builder</artifactId>
             <version>${project.version}</version>
         </dependency>
+        <dependency>
+            <groupId>avis.ipdetection4j</groupId>
+            <artifactId>common</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>avis.ipdetection4j</groupId>
+            <artifactId>internal</artifactId>
+            <version>${project.version}</version>
+        </dependency>
     </dependencies>
-
 </project>

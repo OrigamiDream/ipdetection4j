@@ -9,30 +9,36 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
+    <artifactId>iphub4j</artifactId>
     <packaging>pom</packaging>
-    <artifactId>example</artifactId>
+    <modules>
+        <module>iphub4j-api</module>
+        <module>iphub4j-builder</module>
+        <module>iphub4j-front</module>
+        <module>iphub4j-internal</module>
+    </modules>
 
     <dependencies>
         <dependency>
-            <groupId>avis.ipdetection4j.ipqualityscore4j</groupId>
-            <artifactId>ipqualityscore4j-front</artifactId>
+            <groupId>avis.ipdetection4j</groupId>
+            <artifactId>annotations</artifactId>
             <version>${project.version}</version>
         </dependency>
         <dependency>
-            <groupId>avis.ipdetection4j.getipintel4j</groupId>
-            <artifactId>getipintel4j-front</artifactId>
+            <groupId>avis.ipdetection4j</groupId>
+            <artifactId>builder</artifactId>
             <version>${project.version}</version>
         </dependency>
         <dependency>
-            <groupId>avis.ipdetection4j.iphub4j</groupId>
-            <artifactId>iphub4j-front</artifactId>
+            <groupId>avis.ipdetection4j</groupId>
+            <artifactId>common</artifactId>
             <version>${project.version}</version>
         </dependency>
-        <!-- https://mvnrepository.com/artifact/com.google.code.gson/gson -->
         <dependency>
-            <groupId>com.google.code.gson</groupId>
-            <artifactId>gson</artifactId>
-            <version>2.8.5</version>
+            <groupId>avis.ipdetection4j</groupId>
+            <artifactId>internal</artifactId>
+            <version>${project.version}</version>
         </dependency>
     </dependencies>
+
 </project>

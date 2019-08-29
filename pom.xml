@@ -32,6 +32,7 @@
         <module>bootstrap</module>
         <module>getipintel4j</module>
         <module>iphub4j</module>
+        <module>ipleak4j</module>
     </modules>
 
     <dependencies>

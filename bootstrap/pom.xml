@@ -48,5 +48,15 @@
             <artifactId>ipqualityscore4j-front</artifactId>
             <version>${project.version}</version>
         </dependency>
+        <dependency>
+            <groupId>avis.ipdetection4j.iphub4j</groupId>
+            <artifactId>iphub4j-front</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>avis.ipdetection4j.ipleak4j</groupId>
+            <artifactId>ipleak4j-front</artifactId>
+            <version>${project.version}</version>
+        </dependency>
     </dependencies>
 </project>

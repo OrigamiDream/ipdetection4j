@@ -9,6 +9,10 @@
     <packaging>pom</packaging>
     <version>2.6-SNAPSHOT</version>
 
+    <properties>
+        <maven.deploy.skip>true</maven.deploy.skip>
+    </properties>
+
     <build>
         <plugins>
             <plugin>
@@ -42,4 +46,11 @@
             <version>20180813</version>
         </dependency>
     </dependencies>
+
+    <distributionManagement>
+        <repository>
+            <id>github</id>
+            <url>https://maven.pkg.github.com/OrigamiDream/ipdetection4j</url>
+        </repository>
+    </distributionManagement>
 </project>

@@ -14,22 +14,22 @@
 
     <dependencies>
         <dependency>
-            <groupId>studio.avis.ipqualityscore4j</groupId>
+            <groupId>studio.avis.ipdetection4j.ipqualityscore4j</groupId>
             <artifactId>ipqualityscore4j-front</artifactId>
             <version>${project.version}</version>
         </dependency>
         <dependency>
-            <groupId>studio.avis.getipintel4j</groupId>
+            <groupId>studio.avis.ipdetection4j.getipintel4j</groupId>
             <artifactId>getipintel4j-front</artifactId>
             <version>${project.version}</version>
         </dependency>
         <dependency>
-            <groupId>studio.avis.iphub4j</groupId>
+            <groupId>studio.avis.ipdetection4j.iphub4j</groupId>
             <artifactId>iphub4j-front</artifactId>
             <version>${project.version}</version>
         </dependency>
         <dependency>
-            <groupId>studio.avis.ipleak4j</groupId>
+            <groupId>studio.avis.ipdetection4j.ipleak4j</groupId>
             <artifactId>ipleak4j-front</artifactId>
             <version>${project.version}</version>
         </dependency>

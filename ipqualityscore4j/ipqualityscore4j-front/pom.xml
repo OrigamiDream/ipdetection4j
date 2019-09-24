@@ -4,13 +4,15 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
         <artifactId>ipqualityscore4j</artifactId>
-        <groupId>studio.avis</groupId>
-        <version>2.9.0</version>
+        <groupId>studio.avis.ipdetection4j</groupId>
+        <version>2.10.0</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>studio.avis.ipdetection4j.ipqualityscore4j</groupId>
     <artifactId>ipqualityscore4j-front</artifactId>
+
+    <name>IpDetection4j IpQualityScore4j Frontend</name>
 
     <dependencies>
         <dependency>

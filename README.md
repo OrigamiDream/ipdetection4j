@@ -5,15 +5,15 @@
 ```xml
 <repositories>
     <repository>
-        <id>jitpack.io</id>
-        <url>https://jitpack.io</url>
+        <id>ipdetection4j</id>
+        <url>https://maven.pkg.github.com/OrigamiDream</url>
     </repository>
 </repositories>
 <dependencies>
     <dependency>
-        <groupId>com.github.OrigamiDream.ipdetection4j</groupId>
+        <groupId>studio.avis.ipdetection4j</groupId>
         <artifactId>bootstrap</artifactId>
-        <version>2.9.0</version>
+        <version>2.10.0</version>
     </dependency>
 </dependencies>
 ```
@@ -22,12 +22,12 @@
 allprojects {
     repositories {
         ...
-        maven { url 'https://jitpack.io' }
+        maven { url 'https://maven.pkg.github.com/OrigamiDream' }
     }
 }
 
 dependencies {
-    implementation 'com.github.OrigamiDream.ipdetection4j:bootstrap:v2.9.0'
+    implementation 'studio.avis.ipdetection4j:bootstrap:v2.10.0'
 }
 ```
 
